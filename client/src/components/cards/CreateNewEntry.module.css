@@ -1,0 +1,77 @@
+@import "../../App.css";
+
+.container {
+  display: grid;
+
+  height: 200px;
+  width: 200px;
+  padding: 0.3rem;
+
+  justify-self: center;
+  align-self: center;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+
+  cursor: pointer;
+}
+
+.container:hover {
+  border-color: var(--primary-color);
+  .circle {
+    background-color: var(--hover);
+    border-color: var(--background-primary);
+  }
+}
+
+.title {
+  justify-self: center;
+  font-weight: lighter;
+  margin-top: 10px;
+  padding: 0.3rem;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  background-color: var(--background-primary);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  justify-self: center;
+}
+
+.plus {
+  position: relative;
+  height: 2px;
+  width: 50px;
+  background-color: var(--primary-color);
+}
+.plus::before,
+.plus::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+}
+
+.plus::before {
+  transform: rotate(90deg);
+}
+
+.plus::before,
+.plus::after {
+  top: calc(50%, 5px);
+}
+
+.plus::after {
+  transform: rotate(0deg);
+}

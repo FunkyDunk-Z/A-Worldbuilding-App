@@ -1,0 +1,16 @@
+@import "../../App.css";
+
+.container {
+  display: grid;
+
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: black;
+  z-index: 9000;
+
+  height: 3rem;
+}
+
+.copyright {
+  place-self: center;
+}

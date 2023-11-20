@@ -1,0 +1,66 @@
+@import "../../App.css";
+
+@import "../../App.css";
+
+.container {
+  display: grid;
+
+  padding-inline: 0.3rem;
+  padding-block: 0.7rem;
+
+  justify-self: center;
+  align-self: center;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+
+  cursor: pointer;
+}
+
+.container.small {
+  width: 300px;
+  height: 300px;
+  .thumbnail {
+    width: 280px;
+    height: 120px;
+    place-self: center;
+  }
+}
+.container.medium {
+  width: 400px;
+  height: 400px;
+  .thumbnail {
+    width: 380px;
+    height: 220px;
+    place-self: center;
+  }
+}
+.container.large {
+  width: 500px;
+  height: 500px;
+  .thumbnail {
+    width: 480px;
+    height: 320px;
+    place-self: center;
+  }
+}
+
+.container:hover {
+  border-color: var(--primary-color);
+  .thumbnail {
+    opacity: 0.7;
+  }
+}
+
+.title {
+  justify-self: center;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+}
+
+.summary {
+  margin: 0.3rem;
+  text-align: center;
+}

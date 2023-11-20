@@ -1,0 +1,20 @@
+@import "../App.css";
+
+.title {
+  font-weight: lighter;
+  justify-self: center;
+}
+
+.containerPage {
+  display: grid;
+
+  margin-block: 1rem;
+}
+
+.containerEntries {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 0.3rem;
+}

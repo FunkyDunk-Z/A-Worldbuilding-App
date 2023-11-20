@@ -1,0 +1,58 @@
+@import "../../App.css";
+
+.containerSidebar {
+  position: fixed;
+  display: grid;
+
+  grid-template-rows: auto;
+
+  height: min-content;
+
+  top: 80px;
+  left: 0;
+  min-width: 200px;
+  max-width: fit-content;
+  z-index: 8000;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
+  transform: translateX(-100%);
+  transform-origin: left;
+  transition: transform 500ms ease-in-out;
+}
+
+.containerSidebar.open {
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+
+.containerPlay {
+  position: absolute;
+  left: 100%;
+  top: 5%;
+}
+
+.play {
+  cursor: pointer;
+  width: 25px;
+}
+
+.play.open {
+  position: relative;
+  transform: rotate(180deg);
+  left: -100%;
+}
+
+.titleSidebar {
+  font-weight: lighter;
+  font-size: 1.7rem;
+  text-align: center;
+  justify-self: center;
+  width: 100%;
+  padding: 0.3rem;
+}

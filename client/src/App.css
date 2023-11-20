@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: rgb(135, 84, 148);
+  --secondary-color: rgb(48, 55, 146);
+  --background-primary: rgba(127, 84, 143, 0.5);
+  --hover: rgba(157, 84, 170, 0.5);
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: auto;
+
+  cursor: default;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* body::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--hover);
+
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: var(--background-primary);
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+*/
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: inherit;
+  width: max-content;
+}
+a:hover {
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+.container.main {
+  display: grid;
+
+  grid-template-rows: auto 1fr auto;
+
+  height: 100vh;
+  width: 100vw;
+}

@@ -1,0 +1,100 @@
+@import "../../App.css";
+
+/* NAV BUTTON */
+
+.burgerIcon {
+  position: fixed;
+  margin: 0.7rem;
+  width: 30px;
+  height: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  top: 20px;
+  left: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.open .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* containter */
+
+.containerSidebar {
+  position: fixed;
+  display: grid;
+
+  grid-template-rows: auto;
+
+  width: 250px;
+  gap: 0.3rem;
+  /* padding: 0.5rem; */
+
+  top: 80px;
+  left: -260px;
+  z-index: 9000;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+
+.containerSidebar.open {
+  transform: translateX(103%);
+  transition: transform 500ms ease-in-out;
+}
+
+.link {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .burgerIcon {
+    display: none;
+  }
+
+  .containerNavbar {
+    display: grid;
+
+    grid-template-columns: repeat(6, auto);
+
+    justify-self: end;
+    align-self: center;
+    gap: 1rem;
+
+    word-break: break-all;
+  }
+
+  .link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerNavbar {
+    gap: 1rem;
+  }
+}

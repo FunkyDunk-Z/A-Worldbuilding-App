@@ -1,0 +1,58 @@
+@import "../../App.css";
+
+.container {
+  display: grid;
+  /* position: relative; */
+
+  top: 0;
+  left: 0;
+  height: 80px;
+  /* z-index: 9999; */
+
+  border-bottom-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.logoPlacement {
+  place-self: center;
+  height: 80px;
+}
+
+.logo {
+  width: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.title {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: auto auto 1fr;
+    padding-inline: 2rem;
+  }
+
+  .title {
+    display: block;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    padding-inline: 0.5rem;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-inline: 5rem;
+  }
+}
