@@ -1,0 +1,22 @@
+@import "../../App.css";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px black solid;
+  height: 100px;
+  width: 120px;
+}
+
+.label {
+  grid-column: 1 / -1;
+  font-weight: lighter;
+  justify-self: center;
+}
+
+.hitPoints {
+  grid-column: 1 / -1;
+  font-weight: bold;
+  font-size: 1.5rem;
+  justify-self: center;
+}

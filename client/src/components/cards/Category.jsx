@@ -6,8 +6,14 @@ function Category(props) {
   const sizeName = props.size ? styles[props.size] : "";
   const navigate = useNavigate();
 
+  const formattedCategoryName = props.categoryName
+    .replace(/&/g, "and")
+    .split(" ")
+    .join("-")
+    .toLowerCase();
+
   const handleNavigate = () => {
-    navigate(`${props.categoryName}`);
+    navigate(`${formattedCategoryName}`);
   };
 
   return (

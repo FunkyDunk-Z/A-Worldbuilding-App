@@ -9,6 +9,14 @@ import Home from "./pages/Home";
 import Codex from "./pages/codex/Codex";
 
 import Bestiary from "./pages/codex/bestiary/bestiary";
+import Characters from "./pages/codex/characters/Characters";
+import Factions from "./pages/codex/factions/Factions";
+import Items from "./pages/codex/items/Items";
+import Locations from "./pages/codex/locations/Locations";
+import LoreAndHistory from "./pages/codex/lore-and-history/LoreAndHistory";
+import Nations from "./pages/codex/nations/Nations";
+import Realms from "./pages/codex/realms/Realms";
+import Species from "./pages/codex/species/Species";
 
 function App() {
   return (
@@ -21,6 +29,14 @@ function App() {
             <Route path="/codex">
               <Route index element={<Codex />} />
               <Route path="bestiary" element={<Bestiary />} />
+              <Route path="characters" element={<Characters />} />
+              <Route path="factions" element={<Factions />} />
+              <Route path="items" element={<Items />} />
+              <Route path="locations" element={<Locations />} />
+              <Route path="lore-and-history" element={<LoreAndHistory />} />
+              <Route path="nations" element={<Nations />} />
+              <Route path="realms" element={<Realms />} />
+              <Route path="species" element={<Species />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

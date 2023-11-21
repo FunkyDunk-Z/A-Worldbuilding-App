@@ -1,0 +1,47 @@
+@import "../../App.css";
+
+.containerScores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-self: center; */
+  width: 450px;
+}
+
+.container {
+  display: grid;
+  border: 1px black solid;
+  margin: 0.5rem;
+  width: 130px;
+  height: 130px;
+}
+
+.containerMod {
+  display: grid;
+  border: 1px black solid;
+  width: 60px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  justify-self: center;
+  place-content: center;
+  background-color: white;
+}
+
+.containerScore {
+  display: grid;
+  border: 1px black solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  place-content: center;
+  background-color: white;
+  justify-self: center;
+}
+
+.abilityName {
+  font-weight: lighter;
+  justify-self: center;
+  height: 20px;
+}

@@ -1,0 +1,44 @@
+@import "../../../App.css";
+
+.containerPage {
+  display: grid;
+}
+
+.abilityScores {
+  justify-self: center;
+}
+
+.containerHeader {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.characterPortrait {
+  height: 80px;
+  border-radius: 50%;
+  border: 1px black solid;
+  margin: 0.5rem;
+  justify-self: start;
+}
+
+.containerHitPoints {
+  display: grid;
+  place-content: center;
+  margin: 0.5rem;
+}
+
+.containerCharacterInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.characterName {
+  grid-column: 1/-1;
+  font-weight: lighter;
+  justify-self: start;
+  align-self: end;
+}
+
+.characterInfo {
+  align-self: start;
+}
