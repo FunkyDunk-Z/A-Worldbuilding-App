@@ -11,6 +11,8 @@
 .containerHeader {
   display: grid;
   grid-template-columns: auto 1fr auto;
+
+  border-bottom: 1px black solid;
 }
 
 .characterPortrait {
@@ -19,6 +21,7 @@
   border: 1px black solid;
   margin: 0.5rem;
   justify-self: start;
+  align-self: center;
 }
 
 .containerHitPoints {
