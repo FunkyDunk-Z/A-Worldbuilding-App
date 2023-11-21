@@ -8,31 +8,33 @@
   justify-self: center;
 }
 
+.savingThrows {
+  justify-self: center;
+}
+
 .containerHeader {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr auto;
 
   border-bottom: 1px black solid;
+  margin-bottom: 0.5rem;
 }
 
 .characterPortrait {
   height: 80px;
+  width: 80px;
   border-radius: 50%;
   border: 1px black solid;
   margin: 0.5rem;
-  justify-self: start;
-  align-self: center;
-}
-
-.containerHitPoints {
-  display: grid;
-  place-content: center;
-  margin: 0.5rem;
+  place-self: center;
 }
 
 .containerCharacterInfo {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  height: 80px;
+  padding-left: 0.5rem;
+  align-self: center;
 }
 
 .characterName {
@@ -44,4 +46,10 @@
 
 .characterInfo {
   align-self: start;
+}
+
+@media (min-width: 650px) {
+  .containerHeader {
+    padding-inline: 1rem;
+  }
 }

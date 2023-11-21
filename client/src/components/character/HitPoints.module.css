@@ -1,0 +1,99 @@
+@import "../../App.css";
+
+.containerMobile {
+  position: absolute;
+  display: grid;
+  top: 100%;
+  right: -250px;
+  grid-template-columns: repeat(4, auto);
+  border: 1px black solid;
+  gap: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+
+.containerMobile.open {
+  transform: translateX(-113%);
+  transition: transform 500ms ease-in-out;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border-left: 1px black solid;
+  gap: 0.3rem;
+}
+
+.containerToggle {
+  align-self: center;
+  margin: 0.5rem;
+}
+
+.containerBtn {
+  display: grid;
+  justify-self: center;
+  grid-row: 2 / 4;
+  margin: 0.3rem;
+  border: 1px black solid;
+}
+
+.input {
+  width: 80px;
+  height: 20px;
+  justify-self: center;
+  border: 1px black solid;
+  border-inline: none;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding-block: 0.3rem;
+}
+.inputTempHp {
+  width: 40px;
+  height: 20px;
+  border: 1px black solid;
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.3rem;
+  place-self: center;
+}
+
+.title {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: self-start;
+}
+
+.current {
+  grid-column: 2 / 3;
+  font-weight: bold;
+  justify-self: center;
+  align-self: end;
+}
+.max {
+  grid-column: 4 / 5;
+  font-weight: bold;
+  justify-self: center;
+  align-self: end;
+}
+.temporary {
+  grid-column: 1 / 4;
+  font-weight: bold;
+  place-self: center;
+}
+
+.hitPoints {
+  font-weight: bold;
+  font-size: 1.5rem;
+  place-self: center;
+}
+
+@media (min-width: 650px) {
+  .containerToggle {
+    display: none;
+  }
+}

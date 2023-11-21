@@ -1,0 +1,7 @@
+@import "../../App.css";
+
+.containerSavingThrows {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 450px;
+}

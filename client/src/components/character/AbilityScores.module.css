@@ -3,7 +3,6 @@
 .containerScores {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-self: center; */
   width: 450px;
 }
 
@@ -11,8 +10,8 @@
   display: grid;
   border: 1px black solid;
   margin: 0.5rem;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
 }
 
 .containerMod {
@@ -33,6 +32,7 @@
   border-radius: 50%;
   width: 30px;
   height: 20px;
+  padding: 0.3rem;
   font-weight: bold;
   font-size: 1.2rem;
   place-content: center;
@@ -44,4 +44,5 @@
   font-weight: lighter;
   justify-self: center;
   height: 20px;
+  padding: 0.3rem;
 }
